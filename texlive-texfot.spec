@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-texfot
 Version:	20140311
-Release:	1
+Release:	2
 Summary:	Filter clutter from the output of a TeX run
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/texfot
@@ -17,7 +17,7 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Requires:	texlive-texfot.bin
+Provides:	texlive-texfot.bin = %{EVRD}
 
 %description
 The package provides a small Perl script to filter the online
@@ -35,6 +35,7 @@ invocation itself need not change.
 
 #-----------------------------------------------------------------------
 %files
+%{_bindir}/texfot
 %{_texmfdistdir}/scripts/texfot/texfot.pl
 %doc %{_mandir}/man1/texfot.1*
 %doc %{_texmfdistdir}/doc/man/man1/texfot.man1.pdf
@@ -47,6 +48,10 @@ invocation itself need not change.
 %build
 
 %install
+mkdir -p %{buildroot}%{_bindir}
+pushd %{buildroot}%{_bindir}
+    ln -sf %{_texmfdistdir}/scripts/texfot/texfot.pl texfot
+popd
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf-dist %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1

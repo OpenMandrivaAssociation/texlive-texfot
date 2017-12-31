@@ -5,7 +5,7 @@
 # catalog-license pd
 # catalog-version undef
 Name:		texlive-texfot
-Version:	20170809
+Version:	1.37
 Release:	1
 Summary:	Filter clutter from the output of a TeX run
 Group:		Publishing

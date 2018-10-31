@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-texfot
 Version:	1.37
-Release:	1
+Release:	2
 Summary:	Filter clutter from the output of a TeX run
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/texfot

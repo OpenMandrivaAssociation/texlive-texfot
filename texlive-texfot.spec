@@ -1,5 +1,5 @@
 Name:		texlive-texfot
-Version:	68110
+Version:	70969
 Release:	1
 Summary:	Filter clutter from the output of a TeX run
 Group:		Publishing

@@ -3,7 +3,7 @@ Version:	70969
 Release:	1
 Summary:	Filter clutter from the output of a TeX run
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/support/texfot
+URL:		https://www.ctan.org/tex-archive/support/texfot
 License:	PD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texfot.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texfot.doc.r%{version}.tar.xz

@@ -1,5 +1,6 @@
 %global tl_name texfot
 %global tl_revision 77286
+%global tl_bin_links texfot:%{_texmfdistdir}/scripts/texfot/texfot.pl
 
 Name:		texlive-%{tl_name}
 Epoch:		1
@@ -15,6 +16,8 @@ BuildArch:	noarch
 BuildSystem:	texlive
 Requires:	texlive(texfot.bin)
 Provides:	texlive(%{tl_name}) = %{tl_revision}
+Provides:	texlive(%{tl_name}.bin) = %{tl_revision}
+Provides:	texlive-%{tl_name}.bin = %{EVRD}
 
 %description
 The package provides a small Perl script to filter the online output
